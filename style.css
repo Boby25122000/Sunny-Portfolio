@@ -1,0 +1,520 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: auto;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+/* ====== HEADER ====== */
+header{
+    position: fixed;
+    z-index: 1000px;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    height: 50px;
+}
+#nav{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    border-bottom: rgba(134, 131, 131, 0.37);
+    border-width: 0.1px;
+    border-bottom-style: solid;
+}
+.nav-list{
+    /* margin-top: 20px; */
+    /* margin-right: 30px; */
+    font-size: 1rem;
+    word-spacing: 10px;
+    /* margin-left: 950px; */
+
+}
+.nav-list a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-list a:hover{
+    color: blue;
+    transition: 0.3s ease-in;
+    transform: translateY(4px);
+    font-style: italic;
+}
+
+/* ====== HOME ====== */
+
+#home{   
+    width: 100%;
+    height: 690px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-image: url(/Project1/photos/Homepagebg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+}
+#home h3{
+    font-size: 2rem;
+    margin: 250px 0px 8px 80px;
+    text-align: left
+}
+/* ::first-letter #home h1{
+    color: orange;
+} */
+#home h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0px 0px 0px 80px;
+    text-align: left;
+    
+}
+#home h4{
+    font-size: 2rem;
+    margin: 0px 0px 10px 80px;
+    text-align: left;
+} 
+#home button{
+    margin: 0px 0px 225px 80px;
+} 
+#home button a{
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    /* margin: 5px; */
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+#home button a:hover{
+        color: blue;
+        transition: 0.3s ease-in;
+        transform: translateY(4px);
+}
+/* .contact-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    gap: 250px;
+} */
+.contact-icons img{
+    width: 30px;
+    margin: 0px 8px;
+}
+.contact-icons{
+    width: 100%;
+    /* margin: 0px 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .contact-icons img:hover{
+    transition: 0.3s ease-in;
+    transform: translateY(4px);
+}
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+/*#home .phone-num{
+    
+}
+ .email-id{
+    text-align: right;
+} */
+/* ====== ABOUT ====== */
+
+#about{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    overflow: hidden;
+}
+#about h2{
+    margin-top: 60px;
+
+}
+.about-box {
+    height: 680px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container {
+    height: 600px;
+    width: 450px;
+    margin: auto;
+}
+.about-container {
+    height: 600px;
+    width: 900px;
+    margin: auto;
+}
+.about-container p{
+    font-size: 30px;
+    text-align: justify;
+}
+
+/* ====== SERVICES ======= */
+   
+#services{
+    height: 680px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(/Project1/photos/servicesPageBG.png);
+    background-size: cover;
+    background-position: center;
+}
+#services h2{
+    margin-top: 60px;
+    color: white;
+}
+ .services-container{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+/* ======= Card 1 ===== */
+.services-card-1{
+    height: 300px;
+    width: 300px;
+    margin: 15px 20px 0px 0px;
+    border-radius: 5px;
+    background-image: url(/Project1/photos/FootwearService.jpg);
+    opacity: 0.;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+/* ======= Card 2 ===== */
+.services-card-2{
+    height: 300px;
+    width: 300px;
+    margin: 15px 20px 0px 0px;
+    border-radius: 5px;
+    background-image: url(/Project1/photos/BagService.jpg);
+    opacity: 0.;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+} 
+/* ======= Card 3 ===== */
+.services-card-3{
+    height: 300px;
+    width: 300px;
+    margin: 15px 20px 0px 0px;
+    border-radius: 5px;
+    background-image: url(/Project1/photos/AccesoriesService.jpg);
+    opacity: 0.;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+/* ======= Card 4 ===== */
+.services-card-4{
+    height: 300px;
+    width: 300px;
+    margin: 15px 20px 0px 0px;
+    border-radius: 5px;
+    opacity: 0.;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.services-card-4 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* .card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.services-name h3{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-right: auto;
+    font-weight: bold;
+}
+.services-name{
+    width: 300px;
+    height: 330px;
+    color: white;
+    margin: 15px 20px;
+}
+
+/* ====== RESUME ======= */
+
+#resume {
+    height: 680px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(/Project1/photos/resumePageBG.png);
+    background-size: cover;
+    background-position: bottom;
+    padding: 20px;
+}
+
+#resume h2 {
+    color: white;
+    margin-top: 40px;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    max-width: 100%; 
+    margin: auto;
+    padding: 20px;
+    /* z-index: 1; */
+    /* position: relative; */
+}
+
+/* ===== Card Side 2 ===== */
+.card-side-1{
+    margin: 0px 300px 0px 10px;
+    /* position: relative; */
+}
+
+.skill-card {
+    width: 300px;
+    height: 200px;
+    /* perspective: 1000px;  */
+    margin: 20px;
+   
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    backface-visibility: hidden; 
+    transition: transform 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: #154734; 
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-back {
+    margin: -170px 0px 50% 100%;
+    color: white;
+    font-size: 1.5rem;
+    transform: rotateY(180deg); 
+}
+.skill-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.skill-card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.skill-card .card-front,
+.skill-card .card-back {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+/* ===== Card Side 2 ===== */
+.card-side-2{
+    margin: 0px 0px 0px 300px;
+    /* position: relative; */
+}
+.skill-card-2 {
+    width: 300px;
+    height: 200px;
+    /* perspective: 1000px;  */
+    margin: 20px;
+    /* position: relative; */
+    /* z-index: 1; */
+}
+
+.card-front-2, .card-back-2 {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    backface-visibility: hidden; 
+    transition: transform 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.card-front-2 {
+    background-color: #154734; 
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-back-2 {
+    margin: -170px 0px 50% -100%;
+    color: white;
+    font-size: 1.5rem;
+    transform: rotateY(180deg); 
+}
+
+.skill-card-2:hover .card-front-2 {
+    transform: rotateY(180deg);
+}
+
+.skill-card-2:hover .card-back-2 {
+    transform: rotateY(0deg);
+}
+
+/* .skill-card-2 .card-front-2,
+.skill-card-2 .card-back-2 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+} */
+.card-back-2 p{
+    font-size: 1rem;
+}
+
+/* ====== Portfolio ====== */
+
+#portfolio{
+    height: 680px;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #868f96 0%, #596164 100%);  */
+    background-image: url(/Project1/photos/portfolioPageBG1.png);
+    overflow: hidden;
+    background-size: cover;
+    background-position: top;
+}
+#portfolio h2 {
+    margin-top: 50px;
+    color: white;
+    overflow: hidden;
+}
+.portfolio-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* overflow: hidden; */
+    margin: 4px auto auto auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+}
+.portfolio-container::-webkit-scrollbar {
+    display: none; 
+}
+.video-box.next,
+    .video-card.prev {
+        flex: 0 0 15%; /* Adjust visibility of side videos */
+}
+
+.video-box{
+    width: 1000px;
+    height: 550px;
+    object-fit: cover;
+    margin: auto 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+/* ====== Contact ====== */
+
+#contact {
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%); 
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1300px; 
+    height: 350px;
+    height: 5-auto                                                          ; 
+    background-color: rgba(83, 137, 203, 0.478); 
+    margin: 20px auto;
+    text-align: left; 
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-container{
+    height: 200px;
+    width: 600px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.about-contact {
+    height: 200px;
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+button a{
+    background-color: orange;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+}
+button a:hover{
+    color: blue;
+    transition: 0.3s ease-in;
+    transform: translateY(4px);
+}
